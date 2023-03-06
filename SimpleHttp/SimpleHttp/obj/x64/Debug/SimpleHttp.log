@@ -1,0 +1,9 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.124.129”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+  正在链接对象
+  SimpleHttp.vcxproj -> E:\c++项目\video-server-try\SimpleHttp\SimpleHttp\bin\x64\Debug\SimpleHttp.out

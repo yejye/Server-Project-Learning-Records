@@ -1,0 +1,61 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.124.129”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.cpp
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(75,27): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(75,27): warning :      int size = strlen(data);
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(75,27): warning :                            ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(97,34): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(97,34): warning :      int result = readv(fd, vec, 2);
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(97,34): warning :                                   ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(127,76): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(127,76): warning :          int count = send(socket, m_data + m_readPos, readable, MSG_NOSIGNAL);
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\Buffer.cpp(127,76): warning :                                                                             ^
+  Channel.cpp
+  Dispatcher.cpp
+  EpollDispatcher.cpp
+  EventLoop.cpp
+  HttpRequest.cpp
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(23,26): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(23,26): warning :      int length = space - start;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(23,26): warning :                           ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(84,26): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(84,26): warning :      int lineSize = end - start;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(84,26): warning :                           ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(109,30): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(109,30): warning :          int lineSize = end - start;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(109,30): warning :                               ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(114,35): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(114,35): warning :              int keyLen = middle - start;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(114,35): warning :                                    ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(115,43): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(115,43): warning :              int valueLen = end - middle - 2;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(115,43): warning :                                            ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(245,69): warning : conversion to ‘char’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(245,69): warning :              str.append(1, hexToDec(from[1]) * 16 + hexToDec(from[2]));
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(245,69): warning :                                                                      ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(354,43): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(354,43): warning :          int len = read(fd, buf, sizeof buf);
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\HttpRequest.cpp(354,43): warning :                                            ^
+  Httpresponse.cpp
+  main.cpp
+  PollDispatcher.cpp
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(41,29): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(41,29): warning :              m_fds[i].events = events;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(41,29): warning :                              ^
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(92,29): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(92,29): warning :              m_fds[i].events = events;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\PollDispatcher.cpp(92,29): warning :                              ^
+  SelectDispatcher.cpp
+  TcpConnection.cpp
+  TcpServer.cpp
+  ThreadPool.cpp
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(53,42): warning : operation on ‘((ThreadPool*)this)->ThreadPool::m_index’ may be undefined [-Wsequence-point]
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(53,42): warning :          m_index = ++m_index % m_threadNum;
+E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\ThreadPool.cpp(53,42): warning :                                           ^
+  WorkerThread.cpp
+  正在链接对象
+  ReactorHttp-Cpp.vcxproj -> E:\c++项目\video-server-try\ReactorHttp-Cpp\ReactorHttp-Cpp\bin\x64\Debug\ReactorHttp-Cpp.out

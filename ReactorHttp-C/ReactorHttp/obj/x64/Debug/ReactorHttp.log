@@ -1,0 +1,134 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.124.129”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(16,38): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(16,38): warning :          buffer->data = (char*)malloc(size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(16,38): warning :                                       ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(19,33): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(19,33): warning :          memset(buffer->data, 0, size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(19,33): warning :                                  ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(50,62): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(50,62): warning :          memcpy(buffer->data, buffer->data + buffer->readPos, readable);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(50,62): warning :                                                               ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(58,44): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(58,44): warning :          void* temp = realloc(buffer->data, buffer->capacity + size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(58,44): warning :                                             ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(63,44): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(63,44): warning :          memset(temp + buffer->capacity, 0, size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(63,44): warning :                                             ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(89,51): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(89,51): warning :      memcpy(buffer->data + buffer->writePos, data, size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(89,51): warning :                                                    ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(96,16): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(96,16): warning :      int size = strlen(data);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(96,16): warning :                 ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(108,22): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(108,22): warning :      vec[0].iov_len = writeable;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(108,22): warning :                       ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(112,18): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(112,18): warning :      int result = readv(fd, vec, 2);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(112,18): warning :                   ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(136,56): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(136,56): warning :      char* ptr = memmem(buffer->data + buffer->readPos, bufferReadableSize(buffer), "\r\n", 2);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(136,56): warning :                                                         ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,66): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,66): warning :          int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,66): warning :                                                                   ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,21): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,21): warning :          int count = send(socket, buffer->data + buffer->readPos, readable, MSG_NOSIGNAL);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Buffer.c(147,21): warning :                      ^
+  Channel.c
+  ChannelMap.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(10,47): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(10,47): warning :      map->list = (struct Channel**)malloc(size * sizeof(struct Channel*));
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(10,47): warning :                                                ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(43,52): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(43,52): warning :          struct Channel** temp = realloc(map->list, curSize * unitSize);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(43,52): warning :                                                     ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(50,42): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(50,42): warning :          memset(&map->list[map->size], 0, (curSize - map->size) * unitSize);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ChannelMap.c(50,42): warning :                                           ^
+  EpollDispatcher.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(71,17): warning : conversion to ‘uint32_t {aka unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(71,17): warning :      ev.events = events;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(71,17): warning :                  ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(118,22): warning : conversion to ‘int’ from ‘uint32_t {aka unsigned int}’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(118,22): warning :          int events = data->events[i].events;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\EpollDispatcher.c(118,22): warning :                       ^
+  EventLoop.c
+  HttpRequest.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(91,19): warning : initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(91,19): warning :      char* space = end;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(91,19): warning :                    ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(94,31): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(94,31): warning :          space = memmem(start, end - start, sub, strlen(sub));
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(94,31): warning :                                ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(97,18): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(97,18): warning :      int length = space - start;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(97,18): warning :                   ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(98,31): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(98,31): warning :      char* tmp = (char*)malloc(length + 1);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(98,31): warning :                                ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(99,25): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(99,25): warning :      strncpy(tmp, start, length);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(99,25): warning :                          ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(110,20): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(110,20): warning :      int lineSize = end - start;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(110,20): warning :                     ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(164,24): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(164,24): warning :          int lineSize = end - start;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(164,24): warning :                         ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(166,38): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(169,32): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(169,32): warning :              char* key = malloc(middle - start + 1);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(169,32): warning :                                 ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(170,33): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(170,33): warning :              strncpy(key, start, middle - start);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(170,33): warning :                                  ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(173,34): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(173,34): warning :              char* value = malloc(end - middle - 2 + 1);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(173,34): warning :                                   ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(174,40): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(174,40): warning :              strncpy(value, middle + 2, end - middle - 2);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(174,40): warning :                                         ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(324,19): warning : conversion to ‘char’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(324,19): warning :              *to = hexToDec(from[1]) * 16 + hexToDec(from[2]);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(324,19): warning :                    ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(437,19): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(437,19): warning :          int len = read(fd, buf, sizeof buf);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\HttpRequest.c(437,19): warning :                    ^
+  Httpresponse.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(13,56): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(13,56): warning :      response->headers = (struct ResponseHeader*)malloc(size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(13,56): warning :                                                         ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(16,30): warning : conversion to ‘size_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(16,30): warning :      bzero(response->headers, size);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\Httpresponse.c(16,30): warning :                               ^
+  main.c
+  PollDispatcher.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(61,35): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(61,35): warning :              data->fds[i].events = events;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(61,35): warning :                                    ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(114,35): warning : conversion to ‘short int’ from ‘int’ may alter its value [-Wconversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(114,35): warning :              data->fds[i].events = events;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(114,35): warning :                                    ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(128,33): warning : conversion to ‘nfds_t {aka long unsigned int}’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(128,33): warning :      int count = poll(data->fds, data->maxfd+1, timeout * 1000);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\PollDispatcher.c(128,33): warning :                                  ^
+  SelectDispatcher.c
+  TcpConnection.c
+  TcpServer.c
+  ThreadPool.c
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(12,84): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(12,84): warning :      pool->workerThreads = (struct WorkerThread*)malloc(sizeof(struct WorkerThread) * count);
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(12,84): warning :                                                                                     ^
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(51,21): warning : operation on ‘pool->index’ may be undefined [-Wsequence-point]
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(51,21): warning :          pool->index = ++pool->index % pool->threadNum;
+E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\ThreadPool.c(51,21): warning :                      ^
+  WorkerThread.c
+  正在链接对象
+  ReactorHttp.vcxproj -> E:\c++项目\video-server-try\ReactorHttp\ReactorHttp\bin\x64\Debug\ReactorHttp.out
